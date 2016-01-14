@@ -86,6 +86,61 @@
                         </select>
                     </label>
                 </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Trajanje osiguranja*</h4>
+                </li>
+                <li>
+
+                    <label>Početak
+                        <input data-bind="value: homeModel.fields.datepocetak" type="date">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Kraj
+                        <input data-bind="value: homeModel.fields.datekraj" type="date">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Doplatak</h4>
+                </li>
+                <li>
+
+                    <label>Rekreativno skijanje
+                        <input data-bind="value: homeModel.fields.doplatakski" data-role="switch">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Paketi turističkog osiguranja</h4>
+                </li>
+                <li>
+
+                    <label>Osiguranje od nezgode
+                        <input data-bind="value: homeModel.fields.checkbox" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+                    <label>Smrt uslijed nezgode
+                        <select data-bind="value: homeModel.fields.smrtnezgoda" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Trajna invalidnina
+                        <select data-bind="value: homeModel.fields.trinvalidnina" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
             </ul>
 
             <div class="button-group">

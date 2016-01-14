@@ -85,6 +85,60 @@
               "name": "brojdantrajanja",
               "title": "Broj dana trajanja",
               "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "trajosig",
+              "title": "Trajanje osiguranja*",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "datepocetak",
+              "title": "Početak",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "datekraj",
+              "title": "Kraj",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "doplatak",
+              "title": "Doplatak",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "doplatakski",
+              "title": "Rekreativno skijanje",
+              "inputType": "switch"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "group",
+              "title": "Paketi turističkog osiguranja",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "checkbox",
+              "title": "Osiguranje od nezgode",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "smrtnezgoda",
+              "title": "Smrt uslijed nezgode",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "trinvalidnina",
+              "title": "Trajna invalidnina",
+              "inputType": "dropdownlist"
             }
           ],
           "name": "homeModel",
