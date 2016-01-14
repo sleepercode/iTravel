@@ -12,6 +12,7 @@ app.home = kendo.observable({
 (function(parent) {
     var homeModel = kendo.observable({
         fields: {
+            cijena: '',
             trinvalidnina: '',
             smrtnezgoda: '',
             checkbox: '',

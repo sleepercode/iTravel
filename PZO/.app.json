@@ -139,6 +139,12 @@
               "name": "trinvalidnina",
               "title": "Trajna invalidnina",
               "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "cijena",
+              "title": "Cijena osiguranja",
+              "inputType": "group-separator"
             }
           ],
           "name": "homeModel",
@@ -146,7 +152,7 @@
           "cancelButton": "Cancel"
         }
       ],
-      "title": "Putno osiguranje",
+      "title": "iTravel Putno osiguranje",
       "addToNavigation": true,
       "icon": "home"
     },
