@@ -4,10 +4,119 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
-      "title": "Home View",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio",
+              "title": "Osiguranik",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio1",
+              "title": "Ugovaratelj",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "geo",
+              "title": "Geografsko pokriće",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "destinacije",
+              "title": "Izaberi destinaciju",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "starost",
+              "title": "Starosna dob osiguranika",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "starost60",
+              "title": "0 - 60 god.",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "starost70",
+              "title": "61 - 70 god.",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "period",
+              "title": "Period putovanja",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "periodput",
+              "title": "Dnevna",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "periodput1",
+              "title": "Godišnje",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "svrhaput",
+              "title": "Svrha putovanja",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "brojdantrajanja",
+              "title": "Broj dana trajanja",
+              "inputType": "dropdownlist"
+            }
+          ],
+          "name": "homeModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Putno osiguranje",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "aboutView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:about",
+          "name": "aboutViewModel",
+          "appName": "iTravel",
+          "appVersion": "Version 1",
+          "appIcon": "Capture.PNG",
+          "appDescription": "Testna aplikacija za putno osiguranje.\nby Amel A.",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "amel.avdic@in2.ba",
+          "facebookButton": false,
+          "twitterButton": false
+        }
+      ],
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
     }
   ],
   "dataProviders": [],

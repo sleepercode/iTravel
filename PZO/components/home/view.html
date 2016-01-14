@@ -1,4 +1,103 @@
-<div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+<div data-role="view" data-title="Putno osiguranje" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+    <div id="homeModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+
+                    <label>Osiguranik
+                        <input data-bind="value: homeModel.fields.radio" type="radio" name="group1">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Ugovaratelj
+                        <input data-bind="value: homeModel.fields.radio1" type="radio" name="group1">
+                    </label>
+
+                </li>
+                <li>
+                    <label>Geografsko pokriće
+                        <select data-bind="value: homeModel.fields.geo" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Izaberi destinaciju
+                        <select data-bind="value: homeModel.fields.destinacije" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Starosna dob osiguranika</h4>
+                </li>
+                <li>
+
+                    <label>0 - 60 god.
+                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="group1">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>61 - 70 god.
+                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="group1">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Period putovanja</h4>
+                </li>
+                <li>
+
+                    <label>Dnevna
+                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="group1">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Godišnje
+                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="group1">
+                    </label>
+
+                </li>
+                <li>
+                    <label>Svrha putovanja
+                        <select data-bind="value: homeModel.fields.svrhaput" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Broj dana trajanja
+                        <select data-bind="value: homeModel.fields.brojdantrajanja" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: homeModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: homeModel.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_homeModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_homeModel -->
+    </div>
 
     <!-- START_CUSTOM_CODE_home -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
