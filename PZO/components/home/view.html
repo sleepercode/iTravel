@@ -18,20 +18,16 @@
                 </li>
                 <li>
                     <label>Geografsko pokriće
-                        <select data-bind="value: homeModel.fields.geo" data-role="dropdownlist">
-                            <option value="First Option">First Option</option>
-                            <option value="Second Option">Second Option</option>
-                            <option value="Third Option">Third Option</option>
+                        <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+                            <option value="">Geo. pokriće</option>
+                            <option value="Evropa">Evropa</option>
+  							<option value="Ostalo">Ostalo</option>
                         </select>
                     </label>
                 </li>
                 <li>
                     <label>Izaberi destinaciju
-                        <select data-bind="value: homeModel.fields.destinacije" data-role="dropdownlist">
-                            <option value="First Option">First Option</option>
-                            <option value="Second Option">Second Option</option>
-                            <option value="Third Option">Third Option</option>
-                        </select>
+                        <select id="slct2" name="slct2"></select>
                     </label>
                 </li>
                 <li class="group-separator">
@@ -40,14 +36,14 @@
                 <li>
 
                     <label>0 - 60 god.
-                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="groupstarost">
                     </label>
 
                 </li>
                 <li>
 
                     <label>61 - 70 god.
-                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="groupstarost">
                     </label>
 
                 </li>
@@ -57,14 +53,14 @@
                 <li>
 
                     <label>Dnevna
-                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="groupperiod">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Godišnje
-                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="groupperiod">
                     </label>
 
                 </li>
