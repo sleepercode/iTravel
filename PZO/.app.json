@@ -145,6 +145,12 @@
               "name": "cijena",
               "title": "Cijena osiguranja",
               "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "osigsume",
+              "title": "Osigurane sume",
+              "inputType": "dropdownlist"
             }
           ],
           "name": "homeModel",
@@ -184,5 +190,5 @@
   "navigation": "tabstrip",
   "view": "home",
   "transition": "slide",
-  "skin": "flat"
+  "skin": "nova"
 }

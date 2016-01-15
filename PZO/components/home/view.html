@@ -19,15 +19,25 @@
                 <li>
                     <label>Geografsko pokriće
                         <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
-                            <option value="">Geo. pokriće</option>
-                            <option value="Evropa">Evropa</option>
-  							<option value="Ostalo">Ostalo</option>
-                        </select>
+  								<option value=""></option>
+  								<option value="Evropa">Evropa</option>
+  								<option value="Ostalo">Ostalo</option>
+ 								
+						</select>
                     </label>
                 </li>
                 <li>
                     <label>Izaberi destinaciju
                         <select id="slct2" name="slct2"></select>
+                    </label>
+                </li>
+                <li>
+                    <label>Osigurane sume
+                        <select data-bind="value: homeModel.fields.osigsume" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
                     </label>
                 </li>
                 <li class="group-separator">
@@ -36,14 +46,14 @@
                 <li>
 
                     <label>0 - 60 god.
-                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="groupstarost">
+                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="group1">
                     </label>
 
                 </li>
                 <li>
 
                     <label>61 - 70 god.
-                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="groupstarost">
+                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="group1">
                     </label>
 
                 </li>
@@ -53,14 +63,14 @@
                 <li>
 
                     <label>Dnevna
-                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="groupperiod">
+                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="group1">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Godišnje
-                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="groupperiod">
+                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="group1">
                     </label>
 
                 </li>
@@ -68,8 +78,8 @@
                     <label>Svrha putovanja
                         <select data-bind="value: homeModel.fields.svrhaput" data-role="dropdownlist">
                             <option value="Turisticki">Turistički</option>
-                            <option value="Administracija">Radno - Administracija</option>
-                            <option value="poslovi">Radno - Ostali poslovi</option>
+                            <option value="Administracija">Radno-Administracija</option>
+                            <option value="poslovi">Radno-Ostali poslovi</option>
                         </select>
                     </label>
                 </li>
@@ -124,24 +134,25 @@
                 <li>
                     <label>Smrt uslijed nezgode
                         <select data-bind="value: homeModel.fields.smrtnezgoda" data-role="dropdownlist">
-                            <option value="First Option">First Option</option>
-                            <option value="Second Option">Second Option</option>
-                            <option value="Third Option">Third Option</option>
+                            <option value="5000">5000</option>
+                            <option value="10000">10000</option>
+                            <option value="15000">15000</option>
                         </select>
                     </label>
                 </li>
                 <li>
                     <label>Trajna invalidnina
                         <select data-bind="value: homeModel.fields.trinvalidnina" data-role="dropdownlist">
-                            <option value="First Option">First Option</option>
-                            <option value="Second Option">Second Option</option>
-                            <option value="Third Option">Third Option</option>
+                            <option value="10000">10000</option>
+                            <option value="20000">20000</option>
+                            <option value="30000">30000</option>
                         </select>
                     </label>
                 </li>
                 <li class="group-separator">
                     <h4 class="group-separator-header">Cijena osiguranja</h4>
                 </li>
+
             </ul>
 
             <div class="button-group">
