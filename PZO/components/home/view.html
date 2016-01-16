@@ -1,59 +1,54 @@
 <div data-role="view" data-title="iTravel Putno osiguranje" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
     <div id="homeModel" class="form-view">
         <form>
-            <ul class="form-content" data-role="listview" data-style="inset">
+            <ul class="form-content" data-role="listview" data-style="inset">                                                                                                      
                 <li>
-
                     <label>Osiguranik
                         <input data-bind="value: homeModel.fields.radio" type="radio" name="group1">
                     </label>
-
                 </li>
+                                                                                                                            
                 <li>
-
                     <label>Ugovaratelj
                         <input data-bind="value: homeModel.fields.radio1" type="radio" name="group1">
                     </label>
-
                 </li>
+               <!-- Geo. pokrice -->                                                                                                             
                 <li>
-                    <label>Geografsko pokriće
-                        <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
-  								<option value=""></option>
-  								<option value="Evropa">Evropa</option>
-  								<option value="Ostalo">Ostalo</option>
- 								
-						</select>
+                    <label>Geo. pokriće
+                            <select id="slct1" name="slct1" onchange="populate1(this.id,'slct2','slct3')">
+                                  <option value=""></option>
+                                  <option value="Evropa">Evropa</option>
+                                  <option value="Ostalo">Ostale zemlje</option>
+                            </select>
                     </label>
                 </li>
                 <li>
                     <label>Izaberi destinaciju
-                        <select id="slct2" name="slct2"></select>
+                        <select id="slct2" name="slct2" onchange="populate2(this.id,'slct3')"></select>
                     </label>
                 </li>
                 <li>
                     <label>Osigurane sume
-                        <select data-bind="value: homeModel.fields.osigsume" data-role="dropdownlist">
-                            <option value="First Option">First Option</option>
-                            <option value="Second Option">Second Option</option>
-                            <option value="Third Option">Third Option</option>
-                        </select>
+                            <select id="slct3" name="slct3"></select>
                     </label>
                 </li>
+                                                                                                                            
+                                                                                                                            
                 <li class="group-separator">
                     <h4 class="group-separator-header">Starosna dob osiguranika</h4>
                 </li>
                 <li>
 
                     <label>0 - 60 god.
-                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.starost60" type="radio" name="groupstarost">
                     </label>
 
                 </li>
                 <li>
 
                     <label>61 - 70 god.
-                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.starost70" type="radio" name="groupstarost">
                     </label>
 
                 </li>
@@ -63,14 +58,14 @@
                 <li>
 
                     <label>Dnevna
-                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.periodput" type="radio" name="groupperiod">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Godišnje
-                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="group1">
+                        <input data-bind="value: homeModel.fields.periodput1" type="radio" name="groupperiod">
                     </label>
 
                 </li>
