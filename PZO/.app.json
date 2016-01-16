@@ -190,5 +190,5 @@
   "navigation": "tabstrip",
   "view": "home",
   "transition": "slide",
-  "skin": "nova"
+  "skin": "flat"
 }

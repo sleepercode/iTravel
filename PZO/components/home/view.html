@@ -95,14 +95,14 @@
                 <li>
 
                     <label>Početak
-                        <input id="datepicker1" data-bind="value: homeModel.fields.datepocetak" type="date">
+                        <input id="datepicker1" data-bind="value: homeModel.fields.datepocetak" type="date" oninput="calculate()" >
                     </label>
 
                 </li>
                 <li>
 
                     <label>Kraj
-                        <input id="datepicker2" data-bind="value: homeModel.fields.datekraj" type="date">
+                        <input id="datepicker2" data-bind="value: homeModel.fields.datekraj" type="date" oninput="calculate()" >
                     </label>
 
                 </li>
