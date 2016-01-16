@@ -95,14 +95,14 @@
                 <li>
 
                     <label>Početak
-                        <input data-bind="value: homeModel.fields.datepocetak" type="date">
+                        <input id="datepicker1" data-bind="value: homeModel.fields.datepocetak" type="date">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Kraj
-                        <input data-bind="value: homeModel.fields.datekraj" type="date">
+                        <input id="datepicker2" data-bind="value: homeModel.fields.datekraj" type="date">
                     </label>
 
                 </li>
@@ -143,6 +143,7 @@
                 </li>
                 <li class="group-separator">
                     <h4 class="group-separator-header">Cijena osiguranja</h4>
+                    <input id="result" readonly/>
                 </li>
 
             </ul>
