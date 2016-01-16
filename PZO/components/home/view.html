@@ -128,20 +128,17 @@
                 </li>
                 <li>
                     <label>Smrt uslijed nezgode
-                        <select data-bind="value: homeModel.fields.smrtnezgoda" data-role="dropdownlist">
-                            <option value="5000">5000</option>
-                            <option value="10000">10000</option>
-                            <option value="15000">15000</option>
-                        </select>
+                        <select id="nezg" name="nezg" onchange="populate(this.id,'nezg2')">
+  								<option value=""></option>
+  								<option value="5000">5000</option>
+  								<option value="10000">10000</option>
+								  <option value="15000">15000</option>
+						</select>
                     </label>
                 </li>
                 <li>
                     <label>Trajna invalidnina
-                        <select data-bind="value: homeModel.fields.trinvalidnina" data-role="dropdownlist">
-                            <option value="10000">10000</option>
-                            <option value="20000">20000</option>
-                            <option value="30000">30000</option>
-                        </select>
+                        <select id="nezg2" name="nezg2"></select>
                     </label>
                 </li>
                 <li class="group-separator">
