@@ -112,7 +112,11 @@
                 <li>
 
                     <label>Rekreativno skijanje
-                        <input data-bind="value: homeModel.fields.doplatakski" data-role="switch">
+                        <!--<input id="switch" data-bind="value: homeModel.fields.doplatakski" data-role="switch">-->
+                        <select name="switch" id="switch" data-role="slider" oninput="calculate()">
+                            <option value="NE">Ne</option>
+                            <option value="DA">Da</option>
+                        </select> 
                     </label>
 
                 </li>

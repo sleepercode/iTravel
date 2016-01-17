@@ -5,7 +5,21 @@ function calculate() {
         var firstDate = new Date( $('#datepicker1').val());
         var secondDate = new Date( $('#datepicker2').val());
         var diffDays = Math.round(Math.abs((secondDate.getTime() - firstDate.getTime())/(oneDay)));
+        //var retro = $("#switch").val();
+        
+        //if(retro.value == "DA"){
+         //   var diffDays = Math.round(Math.abs((secondDate.getTime() - firstDate.getTime())/(oneDay)+3));
+        //}
+       // else if(retro.value == "NE"){
+		//     var diffDays = Math.round(Math.abs((secondDate.getTime() - firstDate.getTime())/(oneDay)));
+       // }   
+        //var sw = $('#switch').val();
+        //result.value = diffDays;
         result.value = diffDays;
-        //result.value = secondDate;
+        
+    
+        //result.value = sw;
+        //alert($("#switch").val()); 
+
     
 	}
